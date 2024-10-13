@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/education.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <header class="header-section">
+            <div class="logo">
+                <img src="/img/icons8-logo.svg" alt="">
+            </div>
+            <div class="header-links">
+                <div>
+                <a href="/home.html">Home</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/family.html">Family</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/education.html">Education</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/hobbies.html">Hobbies</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/contact.html">Contact</a>
+                <hr>
+                </div>
+         </div>
+         <img src="/img/IMG_6956.PNG" width="40px" style="border-radius: 50%;" alt="">
+        </header>
+        <div class="education-all">
+            <div class="education-main">
+                <div class="timeline">
+                    <div class="timeline-empty">
+                    </div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3>2011-2017</h3>
+                        <p >Secondary School No. 54 <br>(Taraz)</p>
+                    </div>
+                    <div class="timeline-component timeline-content">
+                        <h3>2017-2022</h3>
+                        <p>Bilim Innovation Lyceum <br> (Taraz)
+                        </p>
+                    </div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-empty">
+                    </div>
+
+                    <div class="timeline-empty">
+                    </div>
+
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class=" timeline-component timeline-content">
+                        <h3>2022-2026</h3>
+                        <p>SDU University <br> (Almaty)</p>
+                    </div>
+     
+     
+     
+    
+
+                </div>
+                <div class="main-text">
+                    <p id="main-title">Education Background</p>
+                    <p id="main-midtext"><span>Kazakh-Turkish Lyceum</span> <br>After completing 7th grade, I continued my education at the Kazakh-Turkish Lyceum. I studied there for five years, building a strong foundation in various academic disciplines.</p>
+                    <p id="main-midtext"><span>Unified National Testing (UNT)</span> <br>After graduating from the Kazakh-Turkish Lyceum, I scored 112 points on the Unified National Testing (UNT), which allowed me to pursue higher education.</p>
+                    <p id="main-midtext"><span>Suleyman Demirel University (SDU)</span> <br>I was accepted into Suleyman Demirel University (SDU), located in Kaskelen, Almaty Region. At SDU, I continued to expand my knowledge and skills.</p>
+                    
+
+                </div>
+            </div>
+    
+    
+        
+            <div class="edu-info">
+                <div class="skills-container">
+                    <div class="skill-icon"><img src="/img/icons8-html-5-48.png" alt="" width="45"></div>
+                    <div class="skill-icon"><img src="/img/icons8-css-logo-48.png" alt="" width="45"></div>
+                    <div class="skill-icon"><img src="/img/icons8-javascript-48.png" alt="" width="45"></div>
+                    <div class="skill-icon"><img src="/img/icons8-react-native-48.png" alt="" width="45"></div>
+                    <div class="skill-icon"><img src="/img/icons8-java-logo-48.png" alt="" width="45"></div>
+                    <div class="skill-icon"><img src="/img/icons8-python-48.png" alt="" width="45"></div>
+                    <div class="skill-icon"><img src="/img/icons8-figma-48.png" alt="" width="45"></div>
+                </div>
+
+                <div class="education-lines"> 
+                <svg class="curved-lines" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M -92 0 Q -80 40 50 100" stroke="#EB0000" stroke-width="0.5" fill="none" />
+                    <path d="M -45 0 Q -37 40 50 100" stroke="#EB0000" stroke-width="0.5" fill="none" />
+                    <path d="M  2  0 Q   2 40 50 100" stroke="#EB0000" stroke-width="0.5" fill="none" />
+                    <path d="M 50 0 Q 50 40 50 100" stroke="#EB0000" stroke-width="0.5" fill="none" />
+                    <path d="M 98 0 Q 98 40 50 100" stroke="#EB0000" stroke-width="0.5" fill="none" />
+                    <path d="M 145 0 Q 145 40 50 100" stroke="#EB0000" stroke-width="0.5" fill="none" />
+                    <path d="M 192 0 Q 192 40 50 100" stroke="#EB0000" stroke-width="0.5" fill="none" />
+        
+                    
+                </svg>
+                </div>
+            
+    
+        
+        </div>
+    </div> 
+</div>
+        
+        
+        
+        
+        
+        
+        
+
+
+
+    
+
+    
+    
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            const currentPage = window.location.pathname.split("/").pop(); 
+            const hrElements = document.querySelectorAll('.header-links hr'); 
+
+            hrElements.forEach(hr => {
+                const link = hr.previousElementSibling; 
+                if (link && link.getAttribute('href') === `/${currentPage}`) {
+                    hr.style.display = 'block'; 
+                } else {
+                    hr.style.display = 'none'; 
+                }
+            });
+        });
+</script>
+</html>

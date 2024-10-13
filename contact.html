@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <header class="header-section">
+            <div class="logo">
+                <img src="/img/icons8-logo.svg" alt="">
+            </div>
+            <div class="header-links">
+                <div>
+                <a href="/home.html">Home</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/family.html">Family</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/education.html">Education</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/hobbies.html">Hobbies</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/contact.html">Contact</a>
+                <hr>
+                </div>
+         </div>
+         <img src="/img/IMG_6956.PNG" width="40px" style="border-radius: 50%;" alt="">
+        </header>
+
+        
+            
+              <div class="screen">
+                <div class="screen-body">
+                  <div class="screen-body-item left">
+                    <div class="app-title">
+                      <span>CONTACT</span>
+                      <span>ME</span>
+                    </div>
+                    <div class="app-contact">
+                        <div class="social-media">
+                            <p>SOCIAL MEDIA:</p>
+                            <img src="/img/icons8-instagram-logo-48.png" width="35px" alt="">
+                            <img src="/img/icons8-telegram-logo-48.png" width="35px" alt="">
+                            <img src="/img/icons8-linkedin-logo-48.png" width="35px" alt="">
+                        </div> 
+                        <div class="contact-me">
+                            <p>CONTACT ME:   +7 707 835 71 12</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="screen-body-item-mid">
+                   
+                <div class="map-container">
+                    <iframe 
+                        class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.0828068806213!2d76.66647077563248!3d43.207752481127855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38834f7675d8a6c3%3A0x7b7d14aec270c056!2sSDU%20University!5e0!3m2!1sru!2skz!4v1728836756987!5m2!1sru!2skz" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                  </div>
+                  <div class="screen-body-item">
+                    <div class="app-form">
+                      <div class="app-form-group">
+                        <input class="app-form-control" placeholder="NAME" >
+                      </div>
+                      <div class="app-form-group">
+                        <input type="email" class="app-form-control" placeholder="EMAIL">
+                      </div>
+                      <div class="app-form-group">
+                        <input type="number" class="app-form-control" placeholder="CONTACT NUMBER">
+                      </div>
+                      <div class="app-form-group message">
+                        <input class="app-form-control" placeholder="MESSAGE">
+                      </div>
+                      <div class="app-form-group buttons">
+                        <button class="app-form-button">CANCEL</button>
+                        <button class="app-form-button">SEND</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+           
+        
+          
+
+        
+        
+    </div>
+
+
+    
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            const currentPage = window.location.pathname.split("/").pop();
+            const hrElements = document.querySelectorAll('.header-links hr');
+
+            hrElements.forEach(hr => {
+                const link = hr.previousElementSibling; 
+                if (link && link.getAttribute('href') === `/${currentPage}`) {
+                    hr.style.display = 'block'; 
+                } else {
+                    hr.style.display = 'none'; 
+                }
+            });
+        });
+</script>
+</html>

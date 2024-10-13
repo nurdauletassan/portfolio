@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/hobbies.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="background">
+        <header class="header-section">
+            <div class="logo">
+                <img src="/img/icons8-logo.svg" alt="">
+            </div>
+            <div class="header-links">
+                <div>
+                <a href="/home.html">Home</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/family.html">Family</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/education.html">Education</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/hobbies.html">Hobbies</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/contact.html">Contact</a>
+                <hr>
+                </div>
+         </div>
+         <img src="/img/IMG_6956.PNG" width="40px" style="border-radius: 50%;" alt="">
+        </header>
+        <div class="hobby-main">
+            <div class="hobby-cs">
+                <div class="main-text">
+                    <p id="main-title"><span>1.Gaming</span></p>
+                    <p id="main-midtext">One of my hobbies is playing Counter-Strike 2. I play twice a week with friends, spending about 3 hours per session. It's a great way to relax, improve teamwork skills, and enjoy some friendly competition.</p>
+                </div>
+                <div class="cs-rang">
+                <img src="/img/counter-strike-2-guns-best-removebg-preview.png" width="680px" alt="">
+                <img src="/img/Снимок экрана 2024-10-12 223817.png" width="400px" alt="">
+                </div>
+            </div>
+            <div class="hobby-cs">
+                <div class="hobby-cs">
+                    <div class="main-text">
+                        <p id="main-title"><span>2.Playing and watching Football</span></p>
+                        <p style="color: black;" id="main-midtext">I'm passionate about playing football and watching matches. Playing football helps me stay active and builds teamwork, while watching games keeps me connected to the latest strategies and excitement in the sport.</p>
+                    </div>
+                    <div class="cs-rang">
+                    <img src="/img/4da598aeab8e77dcdc6c81838116df54.png" width="380px" alt="">
+                    
+                    </div>
+                </div>
+                
+                
+
+            </div>
+
+        </div>
+
+
+    
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            const currentPage = window.location.pathname.split("/").pop();
+            const hrElements = document.querySelectorAll('.header-links hr');
+
+            hrElements.forEach(hr => {
+                const link = hr.previousElementSibling; 
+                if (link && link.getAttribute('href') === `/${currentPage}`) {
+                    hr.style.display = 'block'; 
+                } else {
+                    hr.style.display = 'none'; 
+                }
+            });
+        });
+</script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="background">
+        <header class="header-section">
+            <div class="logo">
+                <img src="/img/icons8-logo.svg" alt="">
+            </div>
+            <div class="header-links">
+                <div>
+                <a href="/home.html">Home</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/family.html">Family</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/education.html">Education</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/hobbies.html">Hobbies</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/contact.html">Contact</a>
+                <hr>
+                </div>
+         </div>
+            <img src="/img/IMG_6956.PNG" width="40px" style="border-radius: 50%;" alt="">
+        </header>
+
+        <div class="main">
+                <div class="main-photoandtext">
+                <img src="/img/IMG_6956.PNG" alt="" >
+                
+                </div>
+                <div class="main-text">
+                    <p id="main-title">Hello! I Am <span>Nurdaulet Assanov</span></p>
+                    <p id="main-midtext">I'm a dedicated student at SDU University, focusing on front-end development and exploring a wide range of interests in science, technology, and the arts. Welcome to my personal page, where you can learn more about my journey, skills, and passion for creating engaging digital experiences!</p>
+                    <p id="main-quote">
+                        <span>INSPIRATION</span> <br>
+                        A Front End Developer <br> Who judges a book by its <span style="color: #EB0000;">cover</span>. <br>
+                        Because if the cover does not impress you  what else can?
+                    </p>
+
+                </div>
+                <p></p>
+            
+        </div>
+        
+    </div>
+
+
+    
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            const currentPage = window.location.pathname.split("/").pop();
+            const hrElements = document.querySelectorAll('.header-links hr');
+
+            hrElements.forEach(hr => {
+                const link = hr.previousElementSibling; 
+                if (link && link.getAttribute('href') === `/${currentPage}`) {
+                    hr.style.display = 'block'; 
+                } else {
+                    hr.style.display = 'none'; 
+                }
+            });
+        });
+</script>
+</html>

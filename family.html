@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/family.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="background">
+        <header class="header-section">
+            <div class="logo">
+                <img src="/img/icons8-logo.svg" alt="">
+            </div>
+            <div class="header-links">
+                <div>
+                <a href="/home.html">Home</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/family.html">Family</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/education.html">Education</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/hobbies.html">Hobbies</a>
+                <hr>
+                </div>
+                <div>
+                <a href="/contact.html">Contact</a>
+                <hr>
+                </div>
+         </div>
+         <img src="/img/IMG_6956.PNG" width="40px" style="border-radius: 50%;" alt="">
+        </header>
+        <p id="family-description">There are 7 people in my family. My parents, 4 sister and me.</p>
+        <div class="family-list">
+        <div class="cards">
+        <div class="card-container">
+            <span class="pro">Dad</span>
+            <img class="round" src="/img/IMGdad.JPG" alt="user" />
+            <h3>Khussanbay</h3>
+            <h6>Taraz</h6>
+            <p>Mechanic at KazTransGaz</p>
+            
+        </div>
+        <div class="card-container">
+            <span class="pro">Mom</span>
+            <img class="round" src="/img/IMG_7152.JPG" alt="user" />
+            <h3>Nazym</h3>
+            <h6>Taraz</h6>
+            <p>Retiree</p>
+            
+        </div>
+        <div class="card-container">
+            <span class="pro">Sister</span>
+            <img class="round" src="/img/IMG_2355.PNG" alt="user" />
+            <h3>Sandugash</h3>
+            <h6>Taraz</h6>
+            <p>Lawyer</p>
+            
+        </div>
+        </div>
+        <div class="cards">
+        <div class="card-container">
+            <span class="pro">Sister</span>
+            <img class="round" src="/img/IMG_2356.PNG" alt="user" />
+            <h3>Karlygash</h3>
+            <h6>Astana</h6>
+            <p>Owner of a Railway Ticket Office</p>
+            
+        </div>
+        <div class="card-container">
+            <span class="pro">Sister</span>
+            <img class="round" src="/img/IMG_2358.PNG" alt="user" />
+            <h3>Ulzhan</h3>
+            <h6>Almaty</h6>
+            <p>Kindergarden Teacher</p>
+            
+        </div>
+        <div class="card-container">
+            <span class="pro">Sister</span>
+            <img class="round" src="/img/IMG_2360.PNG" alt="user" />
+            <h3>Ulbosyn</h3>
+            <h6>Taraz</h6>
+            <p>Medical College Teacher</p>
+            
+        </div>
+        </div>
+    </div>
+        
+        
+        
+    </div>
+
+
+    
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            const currentPage = window.location.pathname.split("/").pop(); 
+            const hrElements = document.querySelectorAll('.header-links hr'); 
+
+            hrElements.forEach(hr => {
+                const link = hr.previousElementSibling; 
+                if (link && link.getAttribute('href') === `/${currentPage}`) {
+                    hr.style.display = 'block'; 
+                } else {
+                    hr.style.display = 'none'; 
+                }
+            });
+        });
+</script>
+</html>

@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dela Gothic One", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #111111;
+    min-height: 100vh;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: #111111;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.header-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-links {
+    display: flex;
+    gap: 50px;
+}
+
+.header-links hr {
+    border: 1px solid red;
+    margin-top: 5px;
+}
+
+.education-main {
+    display: flex;
+    margin: 30px;
+    gap: 90px;
+}
+
+.edu-info {
+    margin: 70px 30px;
+}
+
+.timeline {
+    width: 45%;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    gap: 20px;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: #1f1f1f;
+    border-radius: 6px;
+    color: white;
+    margin: 1rem;
+    overflow-wrap: break-word;
+    transition: 0.4s ease;
+}
+
+.timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #EB0000, #000000);
+    width: 3px;
+    height: 100%;
+}
+
+.timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #EB0000;
+    transform: translateX(-50%);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.education-lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-icon {
+    background-color: #333;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+.curved-lines {
+    width: 120vw;
+    height: 50vh;
+}
+
+.main-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+}
+
+span {
+    color: #EB0000;
+}
+
+#main-title {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+#main-midtext {
+    font-size: 20px;
+}
+
+#main-quote {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .education-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .timeline {
+        width: 80%;
+    }
+
+    .skills-container {
+        gap: 30px;
+    }
+
+    #main-title {
+        font-size: 24px;
+    }
+
+    #main-midtext {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-section {
+        padding: 10px;
+    }
+
+    .header-links {
+        gap: 10px;
+    }
+
+    .education-main {
+        padding: 10px;
+    }
+
+    .timeline {
+        width: 90%;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+
+    #main-title {
+        font-size: 20px;
+    }
+
+    #main-midtext {
+        font-size: 14px;
+    }
+
+    .skills-container {
+        gap: 20px;
+    }
+
+    .skill-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .curved-lines {
+        height: 30vh;
+    }
+}
